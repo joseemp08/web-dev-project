@@ -1,0 +1,232 @@
+//Reset
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+
+// Main Styling
+
+html,
+body {
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h4{
+     font-size: 1.5remp;
+     font-weight: 500;
+}
+
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+a{
+    text-decoration: none ;
+}
+
+//Classes
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.large{
+    font-size: 18px;
+}
+
+.display-1{
+    font-size: 6rem;
+}
+
+.btn{
+     display: inline-block;
+     font-size: 15px;
+     padding:  12px 23px;
+     cursor: pointer;
+     font-weight: bold;
+     letter-spacing: 1px;
+     border-bottom:  4px;
+     &-dark{
+        background-color: black ;
+        border:  1px;
+        color: antiquewhite;
+        border-radius: 5px;
+     }
+}//end .btn
+
+form{
+    label{
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+    .form-group{
+        margin-bottom: 16px;
+
+        &-control{
+            width: 100%;
+            padding: 7px 12px;
+            font-size: 1rem;
+             line-height: 1.5;
+             background-color: #F2E3D3;
+             border: none;
+             border-radius: 4px;
+        }//end form  .form-group-control
+    }//end for .form-group
+    button{
+        width: 100%;
+    }
+}//end form
+
+
+//navbar
+#navbar{
+    height: 12vh;
+    background-color: #000000;
+    color: white;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a{
+        color: white;
+    }
+    .logo{
+        float: left;
+        padding-top: 16px;
+        font-size: 25px;
+    }
+    ul{
+        list-style: none;
+        float: right;
+        li{
+             float: left;
+        }
+        li a{ 
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}//end #navbar
+
+
+//showcase
+
+#showcase{
+    height: 88vh;
+    padding: 120px 0;
+    background: url(/images/jr-korpa-Dm-DXaMx2vY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    h1{
+        width: 50%;
+        color: white;
+    }
+    p{
+        width: 50%;
+        padding: 15px 0;
+        color: white;
+    }
+ }
+
+
+ //about
+  
+ #about{
+    padding: 100px 0;
+    h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    img{
+        width: 100%; 
+    }
+
+    .about-flex{
+        display: flex;
+        &-image{
+            flex: 1;
+        }
+        &-description{
+            flex: 1;
+            padding: 20px 40px;
+        }
+    }
+ }//end #about
+
+
+ //services
+
+ #services{
+    padding: 100px 0;
+    background: #D9A986;
+    h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    p.large{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .services-flex{
+        display: flex;
+        gap: 10px;
+        img{
+            height: 40px ;
+        }
+        &-box{
+            background: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 20px;
+            h4{
+                padding: 10px;
+            }
+        }
+    }
+ }//end #service
+
+ // contact
+
+ #contact{
+    padding: 100px 0;
+    h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    p.large{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    form{
+        width: 50%;
+        margin: 0  auto;
+    }
+ }//end #contact
+
+
+ //footer
+
+ #mainfooter{
+    color: rgb(134, 134, 134);
+    text-align: center;
+    padding: 30px;
+ }
